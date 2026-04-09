@@ -1,0 +1,189 @@
+.community-report-page {
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 60px);
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.report-header h2 {
+  color: #1e293b;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.report-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Post Form Section */
+.report-form-section {
+  flex: 1;
+  min-width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.report-form-section h3 {
+  margin-top: 0;
+  color: #334155;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.modern-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modern-form label {
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.modern-form input,
+.modern-form select,
+.modern-form textarea {
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #334155;
+  transition: all 0.2s;
+  background-color: #f8fafc;
+}
+
+.modern-form input:focus,
+.modern-form select:focus,
+.modern-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: white;
+}
+
+.modern-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Feed Section */
+.community-feed-section {
+  flex: 1.5;
+  min-width: 320px;
+}
+
+.community-feed-section h3 {
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feed-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-left: 5px solid #3b82f6;
+  transition: transform 0.2s;
+}
+
+.feed-card:hover {
+  transform: translateX(5px);
+}
+
+.feed-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feed-issue-type {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.feed-date {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.feed-location {
+  margin: 0 0 10px 0;
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+.feed-desc {
+  margin: 0;
+  color: #64748b;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.empty-feed {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  color: #94a3b8;
+  border: 2px dashed #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
